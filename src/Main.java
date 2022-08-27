@@ -68,10 +68,10 @@ public class Main {
         //Задание №7 - реверс массива int, без дополнительного массива
         int[] five = {5, 4, 3, 2, 1};
         System.out.println(Arrays.toString(five));
-        for (int i = five.length-1;i>=0; i--) {
+        for (int i = five.length - 1; i >= 0; i--) {
             System.out.print(five[i]);
         }
-            System.out.println();
+        System.out.println();
 
         //Задание №8 - найти два числа сумма которых равна -2, напечатать в консоль
         int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
@@ -85,27 +85,19 @@ public class Main {
             }
         }
 
-            //Задание №9 - найти все числа сумма которых равна -2,напечатать в консоль
-            int[] justArray = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
-            for (int i = 0; i < justArray.length; i++) {
-                for (int j = i + 1; j < justArray.length - i; j++) {
-                    if (justArray[i] + justArray[j] == -2) {
-                        System.out.println(justArray[i] + " " + justArray[j]);
-                    }
+        //Задание №9 - найти все числа сумма которых равна -2,напечатать в консоль
+        int[] justArray = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        for (int i = 0; i < justArray.length; i++) {
+            for (int j = i + 1; j < justArray.length - i; j++) {
+                if (justArray[i] + justArray[j] == -2) {
+                    System.out.println(justArray[i] + " " + justArray[j]);
                 }
             }
-
-            int[] nekiyArr = {5, 4, 3, 2, 1};
-            System.out.println(Arrays.toString(nekiyArr));
-            int[] vazniyArr = new int[nekiyArr.length];
-            for (int i = 0; i < nekiyArr.length; i++) {
-                vazniyArr[i] = nekiyArr[nekiyArr.length - i - 1];
-            }
-            System.out.println(Arrays.toString(vazniyArr));
-
-
         }
+
+
     }
+}
 
 
 
